@@ -1,0 +1,16 @@
+{% extends "styling.html" %}
+
+{% block body %}
+
+  <ul>
+    {% for note in notes %}
+      <li>{{ note }}</li>
+    {% endfor %}
+  </ul>
+
+  <form action="{{ url_for('note') }}" method="post">
+    <input type="text" name="note" placeholder="Write your note here">
+    <button>Submit</button>
+  </form>
+
+{% endblock %}

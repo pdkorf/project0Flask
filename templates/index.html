@@ -1,0 +1,15 @@
+{% extends "styling.html" %} {% block body %}
+
+<div>
+  <img src="{{url_for('static', filename='amsterdamStreet.jpg')}}" class="img-fluid" alt="Responsive image">
+</div>
+
+<div class="">
+
+  <form action="{{ url_for('hello') }}" method="post">
+    <input type="text" name="name" placeholder="What is your name?">
+    <button>Submit</button>
+  </form>
+</div>
+
+{% endblock %}

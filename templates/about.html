@@ -1,0 +1,22 @@
+{% extends "styling.html" %}
+
+ {% block body %}
+  <div class="row ">
+    <div class="col-lg-6 col-sm-12 ">
+      <p>
+        {% if new_year %}
+          <b>Gelukkig nieuwjaar</b>
+        {% else %}
+          <b>Nog geen gelukkig nieuwjaar</b>
+        {% endif %}
+        <b>{{ column1 }}</b> This website is build as the first product in the <span>Harard CS50 program</span> for Webdesign. It contains all kind of web techniques, like Bootstrap, @media queries, HTML5.</p>
+    </div>
+    <div class="col-lg-6 col-sm-12 ">
+      <p><b>{{ column2 }}</b> As for this columns. These are examples of the Bootstrap Grid system. The criteria for this product can be find under the section 'Content'.</p>
+    </div>
+  </div>
+
+  <div>
+    <img src="{{url_for('static', filename='AmsterdamCS.jpg')}}" class="img-fluid " alt="Responsive image ">
+  </div>
+{% endblock %}

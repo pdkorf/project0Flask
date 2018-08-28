@@ -1,0 +1,23 @@
+{% extends "styling.html" %}
+
+{% block body %}
+
+    <div class="">
+      <table id="contactTable">
+        <tr>
+          <td><i class="fas fa-mobile-alt fa-2x"></i></td>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td><i class="fab fa-github fa-2x"></i></td>
+          <td><a href="https://github.com/pdkorf/">github.com/pdkorf/</a></td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div style="margin: 5px;">
+      <img src="{{url_for('static', filename='amsterdam.jpg')}}" class="img-fluid mx-auto d-block" alt="Responsive image">
+    </div>
+
+{% endblock %}
